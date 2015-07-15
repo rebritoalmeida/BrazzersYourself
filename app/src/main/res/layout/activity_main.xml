@@ -70,7 +70,7 @@
             android:layout_gravity="bottom"
             android:layout_margin="5dp"
             android:orientation="horizontal"
-            android:padding="5dp"
+            android:padding="6dp"
             android:weightSum="0" >
         </LinearLayout>
     </FrameLayout>
