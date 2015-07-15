@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Brazzers"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_photo"
+            android:layout_toStartOf="@+id/btn_photo" />
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Take photo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_image"
+            android:layout_toStartOf="@+id/btn_image"
+            android:src="@drawable/yoshi"
+            android:layout_alignBottom="@+id/btn_image" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title" >
+
+        <RelativeLayout
+            android:id="@+id/ec_rltabselected"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+
+            <AbsoluteLayout
+                android:id="@+id/relative1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/commonroundedcornerlayout" >
+
+                <ImageView
+                    android:id="@+id/ivCardView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </AbsoluteLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottomLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="0" >
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
